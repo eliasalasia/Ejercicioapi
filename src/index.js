@@ -19,6 +19,8 @@ app.use((req, res, next) => {
   }
 })
 
+app.get('/', (req, res) => res.send('<h1>Bienvenido Amigo</h1>'))
+
 app.get('/api/usuarios', getUsuarios)
 
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`))
